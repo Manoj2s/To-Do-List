@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="todo.css">
+    <title>To-Do List</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="./todo_logo-removebg-preview.png" alt="todo_logo">
+            <h1>To-Do List </h1>
+            <i class="fa-solid fa-moon"></i>
+        </nav>
+    </header>
+    <div id="watch_box">
+        <h2 class="date">Monday, 07 March 2021</h2>
+        <span id="hour">00</span>
+        <span id="">:</span>
+        <span id="minute">00</span>
+        <span id="">:</span>
+        <span id="second">00</span>
+        <!-- <span id="period">Am</span> -->
+    </div>
+    <!-- Task Overview Container -->
+    <div class="task-overview">
+        <div class="box">
+            <span class="number" id="totalTasks">0</span>
+            <span class="description">Total Tasks</span>
+        </div>
+        <div class="box">
+            <span class="number" id="tasksRemaining">0</span>
+            <span class="description">Remaining To Do</span>
+        </div>
+        <div class="box">
+            <span class="number" id="tasksCompleted">0</span>
+            <span class="description">Completed Tasks</span>
+        </div>
+    </div>
+    <!-- Button Box Container -->
+    <div class="task_button">
+        <button class="taskbtn">Add a New Task</button>
+        <select name="" id="">
+            <option value="">All</option>
+            <option value=""> Completed Tasks</option>
+            <option value="">Incompleted Tasks</option>
+
+        </select>
+
+    </div>
+    <!-- modal box Container -->
+    <div class="modal">
+        <div class="modal-content">
+            <input type="text" placeholder="Add Your Task Here..." id="taskInput">
+            <select name="" id="taskCategory">
+                <option value="Personal">Personal</option>
+                <option value="Professional">Professional</option>
+                <option value="Work">Work</option>
+                <option value="Shopping">Shopping</option>
+            </select>
+            <button id="addTaskBtn"><i class="fa-solid fa-plus"></i></button>
+        </div>
+    </div>
+    <button class="taskbtn">Added Task show Here</button>
+    <div class="task-list"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
